@@ -69,3 +69,8 @@ b) **Multivariate Time series** - Consists of values taken in by multiple variab
 15. **Scientific Research**: Time series analysis is used in various scientific fields to model and predict phenomena like climate change, population growth, and the spread of diseases.
 
 # THE AR MODEL
+
+Auto Regression Model - Is a regression model that makes a prediction of the current value based on the past value from that time series.
+Since the **previous value does not change** instanteneously, then it means that that the current value is based on the nearby previous value / values.
+
+**An advanced definition** is A linear model where current value are a sum of past outcomes multiplied by a numeric factor.
