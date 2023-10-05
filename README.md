@@ -74,3 +74,26 @@ Auto Regression Model - Is a regression model that makes a prediction of the cur
 Since the **previous value does not change** instanteneously, then it means that that the current value is based on the nearby previous value / values.
 
 **An advanced definition** is A linear model where current value are a sum of past outcomes multiplied by a numeric factor.
+
+The AR(p) model (where "p" represents the order of the model) can be expressed as follows:
+The formular is
+
+**'X*t = c + φ₁X*(t-1) + φ₂X*(t-2) + ... + φₚX*(t-ₚ) + ɛₜ'**
+
+Where:
+
+- `X_t` is the value of the time series at time "t," which you want to predict.
+- `c` is a constant (intercept term).
+
+- `φ₁, φ₂, ..., φₚ` are the autoregressive coefficients, which represent the weights or contributions of the previous `p` time steps to the current value `X_t`. -**This value should noy be greater than 1 at any given instance, I will explain later mathematically**
+- `X_(t-1), X_(t-2), ..., X_(t-ₚ)` are the lagged values of the time series at time steps `t-1, t-2, ..., t-ₚ`.
+- `ɛₜ` is the white noise error / difference between the predicted value and actual value term at time "t," representing random, unexplained variations in the time series.
+- **this one accounts for the errors**
+
+The order `p` determines how many lagged values are considered when making predictions. For example, an AR(1) model only considers the previous value (`X_(t-1)`), while an AR(2) model considers both `X_(t-1)` and `X_(t-2)`, and so on.
+
+The goal in estimating an AR model is to find the values of the autoregressive coefficients (`φ₁, φ₂, ..., φₚ`) and the constant "c" that best fit the historical data, typically using statistical methods such as least squares estimation.
+
+Once the coefficients are estimated, you can use the model to make forecasts by substituting the known lagged values for `X_(t-1), X_(t-2), ..., X_(t-ₚ)` into the equation to predict the value of `X_t`.
+
+Keep in mind that the choice of the order `p` is an important consideration when building an AR model, and it often requires experimentation and model evaluation to determine the most appropriate order for a given time series dataset.
