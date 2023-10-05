@@ -17,12 +17,12 @@ b) **Multivariate Time series** - Consists of values taken in by multiple variab
 
 ## Tools to use here
 
-1. Python - Will help us data manipulation and analysis tasks
-2. Pandas - Will allow us to load , manipulate, filter and aggregate time series data
-3. Numpy - provides data sructures I.e:, DataFrame and series which are well suited for handling time series data
-4. SciPy (Science Python) - Builds on numpy to allow scientific and technical computing functions - Herein , we will use SciPy for statistical analysis, statistical analysis .....
-5. Atleast one visualizing library (maplotlib, seaborn or plotly) - Used for 2D plotting and visualizing, with plotly making the visualizations interactive
-6. datetime library - Has 2 modules datetime and calender - Allows us parse , format, manipulate date and time information
+1. **Python** - Will help us data manipulation and analysis tasks
+2. **Pandas** - Will allow us to load , manipulate, filter and aggregate time series data
+3. **Numpy** - provides data sructures I.e:, DataFrame and series which are well suited for handling time series data
+4. **SciPy (Science Python)** - Builds on numpy to allow scientific and technical computing functions - Herein , we will use SciPy for statistical analysis, statistical analysis .....
+5. Atleast one visualizing library **(maplotlib, seaborn or plotly)** - Used for 2D plotting and visualizing, with plotly making the visualizations interactive
+6. **datetime library** - Has 2 modules datetime and calender - Allows us parse , format, manipulate date and time information
 
 ## TIME SERIES MODELS TO GO THROUGH
 
